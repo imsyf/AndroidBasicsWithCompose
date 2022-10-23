@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/units_fragment">
+
+    <fragment
+        android:id="@+id/units_fragment"
+        android:name="com.posebasics.app.toc.CourseUnitFragment"
+        android:label="@string/course_name">
+
+        <action
+            android:id="@+id/to_pathwayFragment"
+            app:destination="@id/pathway_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pathway_fragment"
+        android:name="com.posebasics.app.toc.PathwayFragment"
+        android:label="{screenTitle}">
+
+        <argument
+            android:name="unitId"
+            app:argType="integer" />
+
+        <argument
+            android:name="screenTitle"
+            app:argType="string" />
+
+        <argument
+            android:name="unitTitle"
+            app:argType="string" />
+
+        <argument
+            android:name="unitDescription"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/to_demoFragment"
+            app:destination="@id/demo_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/demo_fragment"
+        android:name="com.posebasics.app.toc.DemoFragment"
+        android:label="{screenTitle}">
+
+        <argument
+            android:name="screenTitle"
+            app:argType="string" />
+
+        <argument
+            android:name="pathwayBadge"
+            app:argType="integer" />
+
+        <argument
+            android:name="pathwayTitle"
+            app:argType="string" />
+
+        <argument
+            android:name="pathwayDescription"
+            app:argType="string" />
+
+    </fragment>
+
+    <activity
+        android:id="@+id/u1p2c1_greeting_card"
+        android:name="com.posebasics.app.demo.Unit1Pathway2Codelab1GreetingCard"
+        android:label="@string/greeting_card" />
+
+    <activity
+        android:id="@+id/u1p3c1_happy_birthday"
+        android:name="com.posebasics.app.demo.Unit1Pathway3Codelab1HappyBirthday"
+        android:label="@string/happy_birthday" />
+
+    <activity
+        android:id="@+id/u1p3c2_happy_birthday"
+        android:name="com.posebasics.app.demo.Unit1Pathway3Codelab2HappyBirthday"
+        android:label="@string/happy_birthday" />
+
+    <activity
+        android:id="@+id/u1p3pra1_article"
+        android:name="com.posebasics.app.demo.Unit1Pathway3Practice1Article"
+        android:label="@string/article" />
+
+    <activity
+        android:id="@+id/u1p3pra2_taskcompleted"
+        android:name="com.posebasics.app.demo.Unit1Pathway3Practice2TasksCompleted"
+        android:label="@string/tasks_completed" />
+
+    <activity
+        android:id="@+id/u1p3pra3_quadrants"
+        android:name="com.posebasics.app.demo.Unit1Pathway3Practice3Quadrants"
+        android:label="@string/quadrants" />
+
+    <activity
+        android:id="@+id/u1p3pro1_businesscard"
+        android:name="com.posebasics.app.demo.Unit1Pathway3Project1BusinessCard"
+        android:label="@string/quadrants" />
+
+</navigation>
