@@ -82,6 +82,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".demo.Unit2Pathway2Codelab1DiceRoller"
+            android:exported="false"
+            android:label="@string/dice_roller">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
     </application>
 
 </manifest>

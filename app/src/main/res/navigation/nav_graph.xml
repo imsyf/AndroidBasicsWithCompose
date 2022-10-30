@@ -100,4 +100,9 @@
         android:name="com.posebasics.app.demo.Unit1Pathway3Project1BusinessCard"
         android:label="@string/quadrants" />
 
+    <activity
+        android:id="@+id/u2p2c1_diceroller"
+        android:name="com.posebasics.app.demo.Unit2Pathway2Codelab1DiceRoller"
+        android:label="@string/dice_roller" />
+
 </navigation>

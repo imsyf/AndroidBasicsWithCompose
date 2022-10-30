@@ -163,7 +163,14 @@ object Store {
                     title = "Add a button to an app",
                     description = "Learn how to respond to a button click in an Android app.",
                     published = "April 2022",
-                    demos = listOf()
+                    demos = listOf(
+                        Demo(
+                            route = R.id.u2p2c1_diceroller,
+                            type = DemoType.Codelab,
+                            title = "Create an interactive Dice Roller app",
+                            description = "Learn how to build an interactive Dice Roller app that lets users roll a dice and then shows them the result."
+                        ),
+                    )
                 ),
                 Pathway(
                     id = 3,
