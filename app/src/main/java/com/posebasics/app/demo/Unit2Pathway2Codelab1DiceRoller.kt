@@ -3,6 +3,7 @@ package com.posebasics.app.demo
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -57,19 +58,20 @@ private fun DiceRollerScreen(
     ) {
         var result by remember { mutableStateOf(1) }
 
-        val imageResource = when (result) {
-            1 -> R.drawable.dice_1
-            2 -> R.drawable.dice_2
-            3 -> R.drawable.dice_3
-            4 -> R.drawable.dice_4
-            5 -> R.drawable.dice_5
-            else -> R.drawable.dice_6
+        Crossfade(targetState = result) {
+            val imageResource = when (it) {
+                1 -> R.drawable.dice_1
+                2 -> R.drawable.dice_2
+                3 -> R.drawable.dice_3
+                4 -> R.drawable.dice_4
+                5 -> R.drawable.dice_5
+                else -> R.drawable.dice_6
+            }
+            Image(
+                painter = painterResource(imageResource),
+                contentDescription = "$it",
+            )
         }
-
-        Image(
-            painter = painterResource(imageResource),
-            contentDescription = "$result",
-        )
         Spacer(modifier = Modifier.height(16.dp))
         Button(
             onClick = {
