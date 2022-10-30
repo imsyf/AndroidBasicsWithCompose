@@ -196,6 +196,12 @@ object Store {
                             title = "Intro to state in Compose",
                             description = "Learn about state, and how it can be used and manipulated by Jetpack Compose."
                         ),
+                        Demo(
+                            route = R.id.u2p3c2_tiptime,
+                            type = DemoType.Codelab,
+                            title = "Calculate a custom tip",
+                            description = "Learn how to add an action button, set up keyboard actions, and use a Switch composable."
+                        ),
                     )
                 ),
             ),
