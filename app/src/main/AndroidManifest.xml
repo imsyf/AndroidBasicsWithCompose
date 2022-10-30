@@ -98,6 +98,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".demo.Unit2Pathway3Codelab1TipTime"
+            android:exported="false"
+            android:label="@string/tip_time">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
     </application>
 
 </manifest>

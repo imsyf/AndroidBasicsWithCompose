@@ -189,7 +189,14 @@ object Store {
                     title = "Interact with UI and state",
                     description = "Create a tip calculator app that calculates the tip from user input.",
                     published = "April 2022",
-                    demos = listOf()
+                    demos = listOf(
+                        Demo(
+                            route = R.id.u2p3c1_tiptime,
+                            type = DemoType.Codelab,
+                            title = "Intro to state in Compose",
+                            description = "Learn about state, and how it can be used and manipulated by Jetpack Compose."
+                        ),
+                    )
                 ),
             ),
         ),

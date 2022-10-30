@@ -110,4 +110,9 @@
         android:name="com.posebasics.app.demo.Unit2Pathway2Practice1Lemonade"
         android:label="@string/lemonade" />
 
+    <activity
+        android:id="@+id/u2p3c1_tiptime"
+        android:name="com.posebasics.app.demo.Unit2Pathway3Codelab1TipTime"
+        android:label="@string/tip_time" />
+
 </navigation>
