@@ -105,4 +105,9 @@
         android:name="com.posebasics.app.demo.Unit2Pathway2Codelab1DiceRoller"
         android:label="@string/dice_roller" />
 
+    <activity
+        android:id="@+id/u2p2pra1_lemonade"
+        android:name="com.posebasics.app.demo.Unit2Pathway2Practice1Lemonade"
+        android:label="@string/lemonade" />
+
 </navigation>

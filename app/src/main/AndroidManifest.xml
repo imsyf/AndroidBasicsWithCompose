@@ -90,6 +90,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".demo.Unit2Pathway2Practice1Lemonade"
+            android:exported="false"
+            android:label="@string/lemonade">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
     </application>
 
 </manifest>

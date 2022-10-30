@@ -170,6 +170,17 @@ object Store {
                             title = "Create an interactive Dice Roller app",
                             description = "Learn how to build an interactive Dice Roller app that lets users roll a dice and then shows them the result."
                         ),
+                        Demo(
+                            type = DemoType.Codelab,
+                            title = "Use the debugger in Android Studio",
+                            description = "Learn how to use the debugger in Android Studio to inspect and debug the state of your app at runtime."
+                        ),
+                        Demo(
+                            route = R.id.u2p2pra1_lemonade,
+                            type = DemoType.Practice,
+                            title = "Click behavior: Lemonade",
+                            description = "Apply what you learned about button click behavior to build an app."
+                        ),
                     )
                 ),
                 Pathway(
